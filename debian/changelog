@@ -1,0 +1,12 @@
+adaptation-sony-pdx206 (0.0.0+git20230406015642.ed69595.bookworm) bookworm; urgency=medium
+
+  * Initial commit
+  * Add gitignore
+  * Fix permissions
+  * Add phosh/phoc adaptations for lower scaling factor
+  * Set phosh default scaling factor to 2.9
+  * Create /mnt/idd and /mnt/rca for sony iddd daemon
+  * Enable FDE
+
+ -- Peter Cai <peter@typeblog.net>  Wed, 05 Apr 2023 21:56:42 -0400
+
