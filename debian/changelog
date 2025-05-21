@@ -1,5 +1,11 @@
-adaptation-sony-pdx206 (0.0.0+git20230406015642.ed69595.bookworm) bookworm; urgency=medium
+adaptation-sony-pdx206 (0.0.1+git20250521133104.decc60e.trixie) trixie; urgency=medium
 
+  [ ArchieMeng ]
+  * Add changelogs and workflows
+  * Update deployment action versions
+  * Add public key
+
+  [ Peter Cai ]
   * Initial commit
   * Add gitignore
   * Fix permissions
@@ -8,5 +14,5 @@ adaptation-sony-pdx206 (0.0.0+git20230406015642.ed69595.bookworm) bookworm; urge
   * Create /mnt/idd and /mnt/rca for sony iddd daemon
   * Enable FDE
 
- -- Peter Cai <peter@typeblog.net>  Wed, 05 Apr 2023 21:56:42 -0400
+ -- ArchieMeng <archiemeng@protonmail.com>  Wed, 21 May 2025 21:31:04 +0800
 

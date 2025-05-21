@@ -1,11 +1,11 @@
 Source: adaptation-sony-pdx206
-Maintainer: Peter Cai <peter@typeblog.net>
+Maintainer: Archie Meng <archiemeng@protonmail.com>
 Section: metapackages
 Priority: optional
 Build-Depends: debhelper (>= 10)
 Standards-Version: 4.5.0.3
-Vcs-Browser: https://github.com/PeterCxy/adaptation-sony-pdx206
-Vcs-Git: https://github.com/PeterCxy/adaptation-sony-pdx206.git
+Vcs-Browser: https://github.com/ArchieMeng/adaptation-sony-pdx206
+Vcs-Git: https://github.com/ArchieMeng/adaptation-sony-pdx206.git
 
 Package: adaptation-sony-pdx206
 Architecture: all
