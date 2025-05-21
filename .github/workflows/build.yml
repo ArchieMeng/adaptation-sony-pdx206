@@ -17,24 +17,19 @@ concurrency:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v4
     - name: Make output dir
       run: mkdir -pv /tmp/results
-    - name: QEMU set-up
-      uses: docker/setup-qemu-action@v3
     - name: Build packages in the container
       run: |
         docker run \
-        -v ${{ github.workspace }}:/sources -v /tmp/results:/results \
-        quay.io/droidian/build-essential:current-arm64 /bin/bash -c '''
+        -v ${{ github.workspace }}:/build/sources -v /tmp/results:/build \
+        quay.io/droidian/build-essential:next-amd64 /bin/bash -c '''
         apt-get install linux-packaging-snippets
-        cd /sources
+        cd /build/sources
         dpkg-buildpackage -us -uc -b        
-        mv -v ../*.deb ../*.buildinfo ../*.changes /results
         '''
     - uses: actions/upload-artifact@v4
       with:
@@ -42,6 +37,7 @@ jobs:
     - name: Generate files for Github Page of this repo
       run: |
         cd /tmp/results
+        rmdir /tmp/results/sources
         ls -1 > files
 
         # Generate index.html
