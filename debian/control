@@ -11,10 +11,10 @@ Package: adaptation-sony-pdx206
 Architecture: all
 Depends: ${misc:Depends},
          linux-bootimage-sony-pdx206,
-         adaptation-hybris-api30-phone,
+         adaptation-hybris-api30-phone | adaptation-hybris-api32-phone,
          adaptation-sony-pdx206-configs,
 Description: adapatation-sony-pdx206 - meta
- Sony Xperia 5 II api30 adaptation metapackage
+ Sony Xperia 5 II api30/api32 adaptation metapackage
 
 Package: adaptation-sony-pdx206-configs
 Architecture: all
